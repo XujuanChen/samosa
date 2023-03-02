@@ -90,8 +90,7 @@ const App = () => {
 export default App
 ```
 
-##📍 Checkpoint 0: At this point in the lab, your app should look like a blank page like this (your app may have a white background depending on your browser settings):
-
+📍 Checkpoint 0: At this point in the lab, your app should look like a blank page like this (your app may have a white background depending on your browser settings):
 
 Step 1: Create the User Interface
 
@@ -99,33 +98,33 @@ In this step, we will create a basic user interface for the game.
 
 In App.jsx:
 
-* In the <div className="App>" create the following nested elements:
+* In the <div className=App> create the following nested elements:
 
-* [] A <div> with the className="header" with the following nested elements:
+* A <div> with the className="header" with the following nested elements:
 
-** [] An <h1> with the title "Samosa Selector"
+** An <h1> with the title "Samosa Selector"
 
-** [] An <h2> with the text "Count:"
+** An <h2> with the text "Count:"
 
-** [] An <img> with the className="samosa" and src set to an image of a samosa (use one from the internet for now).
+** An <img> with the className="samosa" and src set to an image of a samosa (use one from the internet for now).
 
 Add some style to the interface using CSS:
 
 * Create a style rule in App.css for .samosa with the following rules:
 
-* [] Set the height of the image to 15em
+* Set the height of the image to 15em
 
-** [] Set the padding of the image to 1.5em
+** Set the padding of the image to 1.5em
 
-** [] Set the margin to 0 auto
+** Set the margin to 0 auto
 
-** [] Set the text-align to center
+** Set the text-align to center
 
 If your app has a light background and you would prefer a dark one:
 
 * Locate and delete the @media (prefers-color-scheme: light) section in index.css
 
-##📍 Checkpoint 1: At this point in the lab, your app should look like this:
+📍 Checkpoint 1: At this point in the lab, your app should look like this:
 
 Step 2: Add a Counter
 
@@ -145,7 +144,8 @@ import { useState } from 'react';
 const [count, setCount] = useState(0);
 ```
 
-* Using the ```useState()``` hook, create a state variable called ```multiplier``` with a value of 1. This state variable will be used to keep track of the current number of samosas per click.
+* Using the ```useState()``` hook, create a state variable called ```multiplier``` with a value of 1. 
+  This state variable will be used to keep track of the current number of samosas per click.
 
 ```
 const [multiplier, setMultiplier] = useState(1);
@@ -169,29 +169,31 @@ const updateCount = () => setCount(count + multiplier);
 <h2>Count: {count}</h2>
 ```
 
-##📍 Checkpoint 2: Your app should now keep track of the number of samosas when the user clicks the image of the samosa. At this point in the lab, your app should look like this:
+📍 Checkpoint 2: Your app should now keep track of the number of samosas when the user clicks the image of the samosa. 
+  At this point in the lab, your app should look like this:
 
 Step 3: Add Upgrades
 In this step, we will add three upgrade options to the user interface.
 
 ```
-Name	              Description	   Cost
-Double Stuffed 👯‍♀️	2x per click	 10 samosas
-Party Pack 🎉	     5x per click	  100 samosas
-Full Feast 👩🏽‍🍳	    10x per click	 1000 samosas
+Name	                Description	     Cost
+Double Stuffed 👯‍♀️	  2x per click	   10 samosas
+Party Pack 🎉	       5x per click	    100 samosas
+Full Feast 👩🏽‍🍳	      10x per click	   1000 samosas
+
 ```
 
-In the ```<div>``` with the class name ```App``` add the following:
+In the <div> with the class name App add the following:
 
 * A <div> with the className="container" with the following nested elements:
 
-* [] For each upgrade, create a <div> with the className="upgrade" that contains the following nested elements
+* For each upgrade, create a <div> with the className="upgrade" that contains the following nested elements
 
-** [] An <h3> heading with the name of upgrade
+** An <h3> heading with the name of upgrade
 
-** [] An <p> with a description of the upgrade
+** An <p> with a description of the upgrade
 
-** [] A <button> with a label with cost of samosas needed to apply the upgrade
+** A <button> with a label with cost of samosas needed to apply the upgrade
 
 Add some style to the interface using CSS.
 
@@ -237,7 +239,7 @@ button {
 }
 ```
 
-##📍 Checkpoint 3: Your app should display the three possible upgrades. At this point in the lab, your app should look like this:
+📍 Checkpoint 3: Your app should display the three possible upgrades. At this point in the lab, your app should look like this:
 
 Step 4: Handle Upgrades
 
@@ -293,13 +295,11 @@ const buyFullFeast = () => {
 <button onClick={buyFullFeast}>1000 samosas</button>
 ```
 
-##📍 Checkpoint 4: At this point in the lab, your app should look like this:
+📍 Checkpoint 4: At this point in the lab, your app should look like this:
 
-
-## 🎉 Congratulations, you've completed your first lab! 🎉
+🎉 Congratulations, you've completed your first lab! 🎉
 
 If you have time left over, continue on to the stretch features to customize and improve your app!
-
 
 ## Stretch Features
 
@@ -310,17 +310,18 @@ In this step, we will update each of the event handling functions so that the us
 ```
 Using setCount(), reduce the count state variable by 10 when the user purchases a Double Stuffed upgrade.
 
-💡 Hint
 To reduce count by 10, we write setCount(count-10) in the buyDoubleStuffed() event handler.
-
+```
+  
 Note: This code snippet should be included within the conditional statement that checks whether the user has at least 10 samosas to avoid creating a negative balance.
-
+  
+```
 Using setCount(), reduce the count state variable by 100 when the user purchases a Party Park upgrade.
 
 Using setCount(), reduce the count state variable by 1000 when the user purchases a Full Feast upgrade.
 ```
 
-##📍 Checkpoint 5: At this point in the lab, your app should look like this:
+📍 Checkpoint 5: At this point in the lab, your app should look like this:
 
 Step 6: Change Size of Samosa on Hover and Click
 
@@ -338,11 +339,10 @@ Create a CSS rule for the .samosa:active that:
 Sets the transform property to scale(0.95)
 ```
 
-##📍 Checkpoint 6: At this point in the lab, your app should look like this:
+📍 Checkpoint 6: At this point in the lab, your app should look like this:
 
-
-## 🎉 Congratulations 🎉
+🎉 Congratulations 🎉
 
 You've completed your first lab AND stretch goals! 🚀
 
-💡 TIP: Remember to come back and reference this lab when you need to do similar things in your project!
+
