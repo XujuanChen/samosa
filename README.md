@@ -164,7 +164,7 @@ const updateCount = () => setCount(count + multiplier);
 <img src="/samosa.png" className="samosa" onClick={updateCount} /> 
 ```
 
-* In the '''<h2>''' tag, call the count state variable to display the number of clicks.
+* In the ```<h2>``` tag, call the count state variable to display the number of clicks.
 
 ```
 <h2>Count: {count}</h2>
@@ -186,15 +186,15 @@ Full Feast 👩🏽‍🍳	      10x per click	   1000 samosas
 
 In the <div> with the class name App add the following:
 
-* A <div> with the className="container" with the following nested elements:
+* A ```<div>``` with the className="container" with the following nested elements:
 
-* For each upgrade, create a <div> with the className="upgrade" that contains the following nested elements
+* For each upgrade, create a ```<div>``` with the className="upgrade" that contains the following nested elements
 
-** An <h3> heading with the name of upgrade
+* An ```<h3>``` heading with the name of upgrade
 
-** An <p> with a description of the upgrade
+* An ```<p>``` with a description of the upgrade
 
-** A <button> with a label with cost of samosas needed to apply the upgrade
+* A ```<button>``` with a label with cost of samosas needed to apply the upgrade
 
 Add some style to the interface using CSS.
 
