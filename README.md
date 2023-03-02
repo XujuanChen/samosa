@@ -90,7 +90,8 @@ const App = () => {
 export default App
 ```
 
-📍 Checkpoint 0: At this point in the lab, your app should look like a blank page like this (your app may have a white background depending on your browser settings):
+📍 Checkpoint 0: At this point in the lab, your app should look like a blank page like this 
+(your app may have a white background depending on your browser settings):
 
 Step 1: Create the User Interface
 
@@ -98,15 +99,15 @@ In this step, we will create a basic user interface for the game.
 
 In App.jsx:
 
-* In the <div className=App> create the following nested elements:
+* In the ```<div className=App>``` create the following nested elements:
 
-* A <div> with the className="header" with the following nested elements:
+* A ```<div>``` with the className="header" with the following nested elements:
 
-** An <h1> with the title "Samosa Selector"
+* An ```<h1>``` with the title "Samosa Selector"
 
-** An <h2> with the text "Count:"
+* An ```<h2>``` with the text "Count:"
 
-** An <img> with the className="samosa" and src set to an image of a samosa (use one from the internet for now).
+* An ```<img>``` with the className="samosa" and src set to an image of a samosa (use one from the internet for now).
 
 Add some style to the interface using CSS:
 
@@ -114,11 +115,11 @@ Add some style to the interface using CSS:
 
 * Set the height of the image to 15em
 
-** Set the padding of the image to 1.5em
+* Set the padding of the image to 1.5em
 
-** Set the margin to 0 auto
+* Set the margin to 0 auto
 
-** Set the text-align to center
+* Set the text-align to center
 
 If your app has a light background and you would prefer a dark one:
 
@@ -239,7 +240,8 @@ button {
 }
 ```
 
-📍 Checkpoint 3: Your app should display the three possible upgrades. At this point in the lab, your app should look like this:
+📍 Checkpoint 3: Your app should display the three possible upgrades. 
+  At this point in the lab, your app should look like this:
 
 Step 4: Handle Upgrades
 
